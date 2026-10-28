@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17323f">
+  <meta name="description" content="QADAM — есептің жауабын ғана емес, ойлау жолын үйренетін интерактивті математикалық кітап." />
+  <title>QADAM — Ойлан. Дәлелде. Шеш.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="QADAM басты бет"><span class="brand-mark">Q</span><span>QADAM<span class="brand-small">ОЙЛАН · ДӘЛЕЛДЕ · ШЕШ</span></span></a>
+    <nav class="desktop-nav" aria-label="Негізгі мәзір">
+      <a href="#method">Әдіс</a><a href="#path">Оқу жолы</a><a href="#lab">Зертхана</a><a href="#practice">Тапсырмалар</a><a href="#mentor">AI серіктес</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Мәзірді ашу" aria-expanded="false">☰</button>
+    <a class="nav-cta" href="#lab">Ойлау сапарын бастау <span>↗</span></a>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Мобильді мәзір"><a href="#method">Әдіс</a><a href="#path">Оқу жолы</a><a href="#lab">Зертхана</a><a href="#practice">Тапсырмалар</a><a href="#mentor">AI серіктес</a></nav>
+
+  <nav class="platform-shortcuts" aria-label="Платформа бөлімдері"><a href="courses.html">Оқу картасы ↗</a><a href="tasks.html">Есептер ↗</a><a href="errors.html">Қате зертханасы ↗</a><a href="journal.html">Жетістігім ↗</a><a href="mentor.html">AI көмекші ↗</a></nav><main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="spark">✳</span> ЖАУАПТАН ӘРІ · ОЙЛАУ ЖОЛЫНА</div>
+        <h1>Есепті шеш.<br><em>Ойыңды да түсін.</em></h1>
+        <p class="hero-lead">Дұрыс жауап — бастамасы ғана. QADAM есептің шартын түсінуге, амал таңдауды дәлелдеуге және қатеңді өзің табуға көмектеседі.</p>
+        <div class="hero-actions"><a class="btn btn-lime" href="#lab">Бірге есеп шығарайық <span>→</span></a><a class="text-link" href="#method">QADAM деген не? <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatar-pair"><span>Н</span><span>А</span></div><span>Нұржігіт пен Айару<br><b>бірге ізденеді</b></span><span class="proof-line"></span><span class="proof-note">5 қадам · 1 ойлау жолы</span></div>
+      </div>
+      <div class="hero-art"><div class="art-glow"></div><img src="assets/qadam-cover.png" alt="Нұржігіт пен Айару есеп картасын бірге қарап отыр"/><div class="art-tag"><span class="tag-dot"></span> ОЙЛАНУҒА ДАЙЫНСЫҢ БА?</div><div class="floating-note note-top"><span>25%</span><small>бүтіннің төрттен бірі</small></div><div class="floating-note note-bottom"><span class="check">✓</span><span>Жауапты таптың.<br><b>Енді тексеріп көр.</b></span></div></div>
+      <div class="hero-stamp">01 <span>/ 05</span></div>
+    </section>
+
+    <section class="steps-strip" id="method">
+      <div class="strip-intro"><span class="eyebrow">БІЗДІҢ ӘДІС</span><h2>Қадаммен ойла.<br><em>Сенімді шеш.</em></h2><p>Әр белгі есептің бір маңызды сұрағын ашады.</p></div>
+      <div class="steps-list" id="stepsList">
+        <button class="step-item active" data-step="0"><span class="step-letter">Q</span><span class="step-name">Қара</span><span class="step-hint">Шартта не белгілі?</span><span class="step-arrow">↗</span></button>
+        <button class="step-item" data-step="1"><span class="step-letter coral">A</span><span class="step-name">Анықта</span><span class="step-hint">Нені табу керек?</span><span class="step-arrow">↗</span></button>
+        <button class="step-item" data-step="2"><span class="step-letter violet">D</span><span class="step-name">Дәлелде</span><span class="step-hint">Неге осы амал?</span><span class="step-arrow">↗</span></button>
+        <button class="step-item" data-step="3"><span class="step-letter gold">A</span><span class="step-name">Атқар</span><span class="step-hint">Ретімен есепте.</span><span class="step-arrow">↗</span></button>
+        <button class="step-item" data-step="4"><span class="step-letter blue">M</span><span class="step-name">Мәнін тексер</span><span class="step-hint">Жауап шартқа сай ма?</span><span class="step-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="path-section" id="path"><div class="section-heading"><div><span class="eyebrow">QADAM ОҚУ КАРТАСЫ · 4 ТАРАУ</span><h2>Әр тарауда жаңа <em>тәсіл.</em></h2></div><p>Оңай байқаудан басталып, өз шешіміңді қорғауға дейін барады. Қалаған тараудан жалғастыр.</p></div><div class="path-grid">
+      <a class="path-card path-one" href="lessons/percent.html"><span>01 · НЕГІЗ</span><b>Пайызды бөлшекпен түсін</b><small>25%, 10% және бүтіннің үлесі</small><i>Тарауды ашу →</i></a>
+      <a class="path-card path-two" href="lessons/whole.html"><span>02 · КӨПҚАДАМ</span><b>Бүтін өзгергенде</b><small>«Қалғанының» деген сөз нені өзгертеді?</small><i>Тарауды ашу →</i></a>
+      <a class="path-card path-three" href="lessons/errors.html"><span>03 · ЗЕРТТЕУ</span><b>Қатені дәл тап</b><small>Алғашқы қате қадамды дәлелмен анықта</small><i>Тарауды ашу →</i></a>
+      <a class="path-card path-four" href="lessons/strategy.html"><span>04 · ӨЗ БЕТІҢШЕ</span><b>Шешіміңді құрастыр</b><small>Модельде, жоспарла, кері тексер</small><i>Тарауды ашу →</i></a>
+    </div><div class="path-progress"><span>Оқу жолындағы жетістігің</span><b id="courseProgress">0 / 4 тарау</b><div><i id="courseProgressBar"></i></div></div></section>
+
+    <section class="lesson-section" id="lab">
+      <div class="section-heading"><div><span class="eyebrow">ОРТАҚ ЗЕРТХАНА · №01</span><h2>360 дәптердің <em>құпиясы</em></h2></div><p>Бір есеп. Екі күн. Өзгеріп отыратын бүтін.</p></div>
+      <div class="lesson-grid">
+        <article class="story-card"><div class="story-top"><span class="pill">КӨПҚАДАМДЫ ЕСЕП</span><span class="bookmark">✳</span></div><p class="story-question">Дүкенге <b>360 дәптер</b> әкелінді. Бірінші күні оның <b>25%-ы</b> сатылды. Екінші күні <b>қалғанының ⅓ бөлігі</b> сатылды. Екі күннен кейін неше дәптер қалды?</p><div class="character-talk"><span class="talk-avatar teal">Н</span><p><b>Нұржігіт:</b> «Екінші күнгі ⅓-ті 360-тан аламын ба?»</p></div><div class="character-talk"><span class="talk-avatar coral">А</span><p><b>Айару:</b> «Шарттағы “қалғанының” деген сөзге қарайық».</p></div><button class="btn btn-dark" id="startSolve">QADAM арқылы бастау <span>→</span></button></article>
+        <article class="flow-card"><div class="flow-head"><div><span class="eyebrow">ЕСЕПТІҢ ІЗІ</span><h3>Әр сан қайдан шықты?</h3></div><span class="flow-count" id="flowCount">01 / 05</span></div><div class="flow-track" id="flowTrack"></div><div class="flow-explanation" id="flowExplanation"></div><div class="flow-controls"><button class="round-btn" id="flowPrev" aria-label="Алдыңғы қадам">←</button><div class="flow-dots" id="flowDots"></div><button class="round-btn next" id="flowNext" aria-label="Келесі қадам">→</button></div></article>
+      </div>
+    </section>
+
+    <section class="challenge-section" id="challenge">
+      <div class="challenge-copy"><span class="eyebrow">ҮШ МИНУТ · ӨЗ ҚАРҚЫНЫҢМЕН</span><h2>Жылдамдық па?<br><em>Әлде дәлдік пе?</em></h2><p>Таймер сені асықтыру үшін емес, өз қарқыныңды байқау үшін. Қанша есепке үлгергеніңді және қаншасы дұрыс болғанын бөлек қараймыз.</p><div class="metric-note"><span class="metric-icon">↗</span><span><b>Дәлдік = дұрыс жауап ÷ орындалған есеп × 100%</b><small>Нөл тапсырма орындалса, дәлдік есептелмейді.</small></span></div><button class="btn btn-lime" id="startChallenge">3 минуттық сынақты бастау <span>→</span></button></div>
+      <div class="challenge-card" id="challengeCard"><div class="challenge-card-top"><span class="pill dark-pill">ШАҒЫН СЫНАҚ</span><span id="timer" class="timer">03:00</span></div><div class="challenge-progress"><span id="challengeProgress"></span></div><div id="questionArea"><div class="challenge-q-index">1 / 6</div><h3 id="challengeQuestion">48 × 5 = ?</h3><form id="answerForm" class="answer-form"><label class="sr-only" for="answerInput">Жауабың</label><input id="answerInput" inputmode="decimal" autocomplete="off" placeholder="Жауабыңды жаз"/><button class="send-answer" type="submit" aria-label="Жауапты тексер">↗</button></form><div id="answerFeedback" class="answer-feedback" aria-live="polite"></div></div><div id="challengeResult" class="challenge-result hidden"></div><div class="challenge-card-foot"><span>Калькуляторсыз орындап көр</span><span class="foot-orb">✳</span></div></div>
+    </section>
+
+    <section class="error-section">
+      <div class="section-heading"><div><span class="eyebrow">ҚАТЕ — ҮЙРЕНУГЕ БЕРІЛГЕН БЕЛГІ</span><h2>Алғашқы қадамды <em>тап.</em></h2></div><p>Соңғы санға ғана қарама. Шешімнің қай жерден бұрылғанын байқа.</p></div>
+      <div class="error-lab"><div class="error-work"><span class="pill">ТАЛДАП КӨР</span><p class="error-prompt">240 санының 25%-ын табу жолы:</p><div class="written-work"><span>240 ÷ 100 = 2,4</span><span>2,4 × 25 = <b class="wrong-number">50</b></span><span class="crossmark">×</span></div><button id="revealError" class="text-link">Алғашқы қатені көрсет <span>↗</span></button><div id="errorReveal" class="error-reveal hidden"><b>Есептеу қатесі.</b> 2,4 × 25 = 60. Тәуелсіз тексеру: 240 ÷ 4 = 60. Бірінші қадам дұрыс болған, қате көбейтуде шыққан.</div></div><div class="error-categories"><div><span class="error-num">01</span><span><b>Шартты түсіну</b><small>Деректің мағынасын шатастыру</small></span></div><div><span class="error-num">02</span><span><b>Амал таңдау</b><small>Шамалардың байланысын қате тану</small></span></div><div><span class="error-num">03</span><span><b>Есептеу</b><small>Амал дұрыс, нәтиже қате</small></span></div><div><span class="error-num">04</span><span><b>Көшіру / асығыстық</b><small>Сан не таңбаны өзгертіп жазу</small></span></div><div><span class="error-num">05</span><span><b>Тексермеу</b><small>Сәйкессіз нәтижені байқамау</small></span></div></div></div>
+    </section>
+
+    <section class="thinking-section" id="practice">
+      <div class="section-heading"><div><span class="eyebrow">ОЙДЫ ШЫҢДАЙТЫН ҮШ АЯЛДАМА</span><h2>Тап. Салыстыр. <em>Құрастыр.</em></h2></div><p>Әр тапсырма басқа дағдыны жаттықтырады. Жауапты ашпай тұрып өз ойыңды жазып көр.</p></div>
+      <div class="journal-line"><span class="journal-icon">✳</span><span><b>Ойлау журналы</b><small>Бүгін орындалған аялдама</small></span><strong id="journalCount">0 / 3</strong><div class="journal-track"><i id="journalProgress"></i></div></div>
+      <div class="thinking-grid">
+        <article class="thinking-card compare-card"><span class="activity-index">01 · САЛЫСТЫР</span><h3>Бір нәтиже. Екі жол.</h3><p>360 санының 25%-ын табу үшін екі тәсілді оқы. Қайсысында 10%-ды аралық тірек ретінде қолданған?</p><div class="mini-solution"><span>А жолы</span><b>360 ÷ 4 = 90</b></div><div class="mini-solution"><span>Ә жолы</span><b>360 ÷ 10 = 36<br>36 × 2,5 = 90</b></div><button class="reveal-btn" data-reveal="compareAnswer">Өз ойыңды тексер <span>↗</span></button><div class="task-answer hidden" id="compareAnswer">Ә жолында алдымен 10% табылады. Екі тәсіл де дұрыс, себебі 25% = ¼, ал 25% — 10%-дың 2,5 есесі. Қай тәсілді таңдайтыныңды есептің сандарына қарап шеш.</div></article>
+        <article class="thinking-card error-card"><span class="activity-index">02 · ҚАТЕНІ ТАП</span><h3>Қай қадамнан жаңылды?</h3><p>Дүкендегі 5 000 теңгелік затқа 20% жеңілдік жасалды. Оқушы былай есептеді:</p><div class="mistake-note">5 000 × 20 = 100 000 теңге жеңілдік</div><button class="reveal-btn" data-reveal="mistakeAnswer">Алғашқы қатені көрсет <span>↗</span></button><div class="task-answer hidden" id="mistakeAnswer">Қате — 20-ны пайыз емес, бүтін сан ретінде көбейту. 20% = 20/100 = 1/5, сондықтан жеңілдік 5 000 ÷ 5 = 1 000 теңге. Жаңа баға: 5 000 − 1 000 = 4 000 теңге.</div></article>
+        <article class="thinking-card create-card"><span class="activity-index">03 · ҚҰРАСТЫР</span><h3>Өз шешіміңді жоспарла.</h3><p>Қоймада 320 қарындаш болды. Бірінші күні төрттен бірі, екінші күні қалғанының үштен бірі таратылды. Қаншасы қалды?</p><div class="plan-steps"><span><i>1</i> Бірінші күннен кейінгі қалдықты тап.</span><span><i>2</i> Екінші күнгі үлестің бүтінін анықта.</span><span><i>3</i> Соңғы қалдықты кері тексер.</span></div><button class="reveal-btn" data-reveal="createAnswer">Жоспарды тексер <span>↗</span></button><div class="task-answer hidden" id="createAnswer">320 ÷ 4 = 80 қарындаш таратылды, 320 − 80 = 240 қалды. Екінші күні 240 ÷ 3 = 80 таратылды. Соңында 240 − 80 = 160 қарындаш қалды. Тексеру: 80 + 80 + 160 = 320.</div></article>
+      </div>
+    </section>
+
+    <section class="mentor-section" id="mentor"><div class="mentor-ornament">✳</div><div class="mentor-copy"><span class="eyebrow">QADAM AI · ОЙЛАУ СЕРІКТЕСІ</span><h2>Дайын жауап емес.<br><em>Дұрыс сұрақ.</em></h2><p>Есебіңді немесе шешу жолыңды жаз. AI алдымен бір ишара береді, қатенің алғашқы қадамын табуға көмектеседі. Соңғы шешім өзіңде қалады.</p><div class="mentor-modes"><button class="mode-chip active" data-mode="hint">Бір ишара</button><button class="mode-chip" data-mode="check">Шешімімді тексер</button><button class="mode-chip" data-mode="error">Қатемді талда</button></div></div><div class="chat-shell"><div class="chat-header"><div class="bot-avatar">Q</div><div><b>QADAM AI</b><small>Сұрақ қоюға дайынмын</small></div><span class="online-dot"></span></div><div class="chat-messages" id="chatMessages"><div class="chat-bubble bot-bubble">Сәлем! Қай есептің қай қадамында тоқтадың? Шешімің болса, бірге қарайық.</div></div><div class="quick-prompts"><button data-prompt="Мен 360 дәптер есебін шығарып жатырмын. Екінші күнгі 1/3 қай санға қатысты екенін жауапты айтпай, сұрақпен түсіндір.">360 дәптер есебі</button><button data-prompt="240 санының 25%-ын табудағы мына шешімімді талда: 240 ÷ 100 = 2,4; 2,4 × 25 = 50. Дайын жауаптан бұрын алғашқы қате қадамды ата.">Қате жолды талда</button></div><form class="chat-form" id="chatForm"><label class="sr-only" for="chatInput">Сұрағың</label><textarea id="chatInput" rows="1" maxlength="1400" placeholder="Есепті не шешу жолыңды жаз…"></textarea><button id="chatSend" type="submit" aria-label="Жіберу">↑</button></form><div class="chat-foot"><span id="charCount">0 / 1400</span><span>Жеке мәлімет жазба · AI жауабын тексеріп ал</span></div></div></section>
+
+    <section class="closing"><div class="closing-mark">Q</div><div><span class="eyebrow">КЕЛЕСІ ҚАДАМ — СЕНІҢ ҚОЛЫҢДА</span><h2>Жауапқа асықпа.<br><em>Қадамыңды түсін.</em></h2></div><a class="btn btn-light" href="#home">Басына қайту ↑</a><div class="closing-orbit orbit-a"></div><div class="closing-orbit orbit-b"></div></section>
+  </main>
+  <footer><span>QADAM · Ойлан, дәлелде, шеш!</span><span>Нұрлыбекұлы Нұржігіт · Сәбит Айару</span><span>Математиканы түсініп үйренуге арналған жоба</span></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
